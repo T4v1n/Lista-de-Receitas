@@ -15,7 +15,7 @@ const DetailScreen = ({ route }) => {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
-    backgroundColor: '#fff',
+    backgroundColor: '#FAF0E6',
     flex: 1,
   },
   title: {

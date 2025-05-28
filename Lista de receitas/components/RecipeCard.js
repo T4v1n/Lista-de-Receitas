@@ -10,18 +10,22 @@ const RecipeCard = ({ title, description, onPress }) => (
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: '#f0f0f0',
-    padding: 15,
-    marginVertical: 8,
-    borderRadius: 10,
+  backgroundColor: '#FF6347',
+  padding: 15,
+  marginVertical: 8,
+  borderRadius: 10,
+  width: 280,       
+  height: 100,      
+  justifyContent: 'center',
   },
   title: {
-    fontSize: 18,
+    fontFamily: 'Brush Script MT, Brush Script Std, cursive',
+    fontSize: 25,
     fontWeight: 'bold',
     color: '#2e2e2e',
   },
   description: {
-    color: '#555',
+    color: '#F5DEB3',
     marginTop: 5,
   },
 });

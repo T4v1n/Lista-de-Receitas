@@ -9,6 +9,7 @@ const HomeScreen = ({ navigation }) => {
       <FlatList
         data={recipes}
         keyExtractor={(item) => item.id}
+        contentContainerStyle={styles.flatListContent}
         renderItem={({ item }) => (
           <RecipeCard
             title={item.title}
@@ -16,6 +17,7 @@ const HomeScreen = ({ navigation }) => {
             onPress={() => navigation.navigate('Detalhes da Receita', { recipe: item })}
           />
         )}
+        style={styles.flatList}
       />
     </View>
   );
@@ -23,9 +25,16 @@ const HomeScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 16,
-    backgroundColor: '#FAF0E6',
     flex: 1,
+    backgroundColor: '#FAF0E6',
+  },
+  flatList: {
+    flex: 1,
+  },
+  flatListContent: {
+    alignItems: 'center',  
+    paddingVertical: 16,
+    paddingHorizontal: 16,
   },
 });
 
